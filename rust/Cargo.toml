@@ -1,0 +1,20 @@
+[package]
+name = "vae_factor_model"
+version = "0.1.0"
+edition = "2021"
+description = "VAE-based factor model for financial market analysis"
+license = "MIT"
+repository = "https://github.com/suenot/machine-learning-for-trading"
+
+[dependencies]
+ndarray = "0.15"
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+rand = "0.8"
+
+[[example]]
+name = "trading_example"
+path = "examples/trading_example.rs"
